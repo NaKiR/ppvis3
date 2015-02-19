@@ -4,8 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * Created by NotePad on 17.02.2015.
@@ -52,7 +50,11 @@ public class Frame extends JFrame {
 
     public static void main(String[] args) {
         Frame app = new Frame();
+        app.pack();
         app.setVisible(true);
+        ButtonNameChanger app1 = new ButtonNameChanger();
+        app1.pack();
+        app1.setVisible(true);
     }
 }
 
