@@ -17,6 +17,7 @@ public class MainFrame {
         componentBox.add(new ButtonNameChanger());
         componentBox.add(new RadioButtonChooser());
         componentBox.add(new CheckBoxChooser());
+        componentBox.add(new TableEditor());
         mainFrame.pack();
         mainFrame.setVisible(true);
     }

@@ -36,11 +36,7 @@ public class CheckBoxChooser extends Container{
             for (JCheckBox checkBox : checkboxes) {
                 if (checkBox.getText().equals(input.getText())) {
                     ifExist = true;
-                    if (checkBox.isSelected()){
-                        checkBox.setSelected(false);
-                    } else {
-                        checkBox.setSelected(true);
-                    }
+                    checkBox.setSelected(!checkBox.isSelected());
                 }
             }
             if (!ifExist) {
