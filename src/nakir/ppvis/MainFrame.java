@@ -15,6 +15,7 @@ public class MainFrame {
         componentBox.setLayout(new BoxLayout(componentBox,BoxLayout.X_AXIS));
         componentBox.add(new ComboBoxEditor());
         componentBox.add(new ButtonNameChanger());
+        componentBox.add(new RadioButtonChooser());
         mainFrame.pack();
         mainFrame.setVisible(true);
     }
