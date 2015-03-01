@@ -1,4 +1,4 @@
-package nakir.ppvis;
+package nakir.ppvis.lab1;
 
 import javax.swing.*;
 import java.awt.*;
@@ -17,15 +17,20 @@ public class TableEditor extends Container {
     private JTextField input = new JTextField("", 10);
     private JLabel label = new JLabel("Input:");
     private JTable table = new JTable(numRows, numColumns);
+    private final int HEIGHT = 25;
 
     public TableEditor() {
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         this.add(table);
         this.add(label);
+        input.setMaximumSize(new Dimension(Short.MAX_VALUE, HEIGHT));
         this.add(input);
         addButton.addActionListener(new AddButtonEventListener());
+        addButton.setMaximumSize(new Dimension(Short.MAX_VALUE, HEIGHT));
         toFirstColumnButton.addActionListener(new ChangeToFirstButtonEventListener());
+        toFirstColumnButton.setMaximumSize(new Dimension(Short.MAX_VALUE, HEIGHT));
         toSecondColumnButton.addActionListener(new ChangeToSecondButtonEventListener());
+        toSecondColumnButton.setMaximumSize(new Dimension(Short.MAX_VALUE, HEIGHT));
         this.add(addButton);
         this.add(toFirstColumnButton);
         this.add(toSecondColumnButton);

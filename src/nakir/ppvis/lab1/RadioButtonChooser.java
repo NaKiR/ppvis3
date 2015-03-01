@@ -1,4 +1,4 @@
-package nakir.ppvis;
+package nakir.ppvis.lab1;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,21 +9,27 @@ import java.util.Enumeration;
 /**
  * Created by NotePad on 21.02.2015.
  */
-public class CheckBoxChooser extends Container{
+public class RadioButtonChooser extends Container{
     private JButton button = new JButton("Add");
     private JTextField input = new JTextField("", 10);
     private JLabel label = new JLabel("Input:");
-    private JCheckBox checkButton1 = new JCheckBox("Button1");
-    private JCheckBox checkButton2 = new JCheckBox("Button2");
-    private JCheckBox checkButton3 = new JCheckBox("Button3");
-    private JCheckBox[] checkboxes = new JCheckBox[] {checkButton1, checkButton2, checkButton3};
+    private ButtonGroup group = new ButtonGroup();
+    private JRadioButton checkButton1 = new JRadioButton("Button1");
+    private JRadioButton checkButton2 = new JRadioButton("Button2");
+    private JRadioButton checkButton3 = new JRadioButton("Button3");
+    private final int HEIGHT = 25;
 
-    public CheckBoxChooser() {
+    public RadioButtonChooser() {
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         this.add(label);
+        input.setMaximumSize(new Dimension(Short.MAX_VALUE, HEIGHT));
         this.add(input);
         button.addActionListener(new ButtonEventListener());
+        button.setMaximumSize(new Dimension(Short.MAX_VALUE, HEIGHT));
         this.add(button);
+        group.add(checkButton1);
+        group.add(checkButton2);
+        group.add(checkButton3);
         this.add(checkButton1);
         this.add(checkButton2);
         this.add(checkButton3);
@@ -33,10 +39,12 @@ public class CheckBoxChooser extends Container{
 
         public void actionPerformed(ActionEvent e) {
             boolean ifExist = false;
-            for (JCheckBox checkBox : checkboxes) {
-                if (checkBox.getText().equals(input.getText())) {
+            for (Enumeration<AbstractButton> buttons = group.getElements(); buttons
+                    .hasMoreElements();) {
+                AbstractButton tmpButton = buttons.nextElement();
+                if (tmpButton.getText().equals(input.getText())) {
                     ifExist = true;
-                    checkBox.setSelected(!checkBox.isSelected());
+                    tmpButton.setSelected(true);
                 }
             }
             if (!ifExist) {
