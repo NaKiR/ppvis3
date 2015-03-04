@@ -9,13 +9,13 @@ import java.awt.event.ActionListener;
  * Created by NotePad on 21.02.2015.
  */
 public class CheckBoxChooser extends Container{
-    private JButton button = new JButton("Add");
+    private RunningButton button = new RunningButton("Добавить");
     private JTextField input = new JTextField("", 10);
-    private JLabel label = new JLabel("Input:");
-    private JCheckBox checkButton1 = new JCheckBox("Button1");
-    private JCheckBox checkButton2 = new JCheckBox("Button2");
-    private JCheckBox checkButton3 = new JCheckBox("Button3");
-    private JCheckBox[] checkboxes = new JCheckBox[] {checkButton1, checkButton2, checkButton3};
+    private RunningLabel label = new RunningLabel("Ввод:");
+    private RunningCheckBox checkButton1 = new RunningCheckBox("Button1");
+    private RunningCheckBox checkButton2 = new RunningCheckBox("Button2");
+    private RunningCheckBox checkButton3 = new RunningCheckBox("Button3");
+    private RunningCheckBox[] checkboxes = new RunningCheckBox[] {checkButton1, checkButton2, checkButton3};
     private final int HEIGHT = 25;
 
     public CheckBoxChooser() {

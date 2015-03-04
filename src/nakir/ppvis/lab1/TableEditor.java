@@ -11,11 +11,11 @@ import java.awt.event.ActionListener;
 public class TableEditor extends Container {
     private int numRows = 5;
     private int numColumns = 2;
-    private JButton addButton = new JButton("Add");
-    private JButton toFirstColumnButton = new JButton("To First Column");
-    private JButton toSecondColumnButton = new JButton("To Second Column");
+    private RunningButton addButton = new RunningButton("Добавить");
+    private RunningButton toFirstColumnButton = new RunningButton("В первую колонку");
+    private RunningButton toSecondColumnButton = new RunningButton("Во вторую колонку");
     private JTextField input = new JTextField("", 10);
-    private JLabel label = new JLabel("Input:");
+    private RunningLabel label = new RunningLabel("Ввод:");
     private JTable table = new JTable(numRows, numColumns);
     private final int HEIGHT = 25;
 
@@ -56,8 +56,10 @@ public class TableEditor extends Container {
 
         public void actionPerformed(ActionEvent e) {
             Object value = table.getValueAt(table.getSelectedRow(), 0);
-            table.setValueAt(value, table.getSelectedRow(), 1);
-            table.setValueAt("", table.getSelectedRow(), 0);
+            if (!value.equals("")) {
+                table.setValueAt(value, table.getSelectedRow(), 1);
+                table.setValueAt("", table.getSelectedRow(), 0);
+            }
         }
     }
 }

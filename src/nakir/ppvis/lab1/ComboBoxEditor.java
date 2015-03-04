@@ -10,9 +10,9 @@ import java.awt.event.ActionListener;
  */
 public class ComboBoxEditor extends Container {
     private String[] comboBoxItems = new String[] {""};
-    private JButton button = new JButton("Add");
+    private RunningButton button = new RunningButton("Добавить");
     private JTextField input = new JTextField("", 10);
-    private JLabel label = new JLabel("Input:");
+    private RunningLabel label = new RunningLabel("Ввод:");
     private JComboBox comboBox = new JComboBox(comboBoxItems);
     private final int HEIGHT = 25;
 

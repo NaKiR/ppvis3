@@ -21,6 +21,7 @@ public class LabComponents {
         componentBox.add(new RadioButtonChooser());
         componentBox.add(new CheckBoxChooser());
         componentBox.add(new TableEditor());
+        componentBox.add(new MarqueeComponent());
         mainFrame.pack();
         mainFrame.setVisible(true);
     }

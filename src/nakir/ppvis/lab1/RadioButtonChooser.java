@@ -10,13 +10,13 @@ import java.util.Enumeration;
  * Created by NotePad on 21.02.2015.
  */
 public class RadioButtonChooser extends Container{
-    private JButton button = new JButton("Add");
+    private RunningButton button = new RunningButton("Добавить");
     private JTextField input = new JTextField("", 10);
-    private JLabel label = new JLabel("Input:");
+    private RunningLabel label = new RunningLabel("Ввод:");
     private ButtonGroup group = new ButtonGroup();
-    private JRadioButton checkButton1 = new JRadioButton("Button1");
-    private JRadioButton checkButton2 = new JRadioButton("Button2");
-    private JRadioButton checkButton3 = new JRadioButton("Button3");
+    private RunningRadioButton checkButton1 = new RunningRadioButton("Button1");
+    private RunningRadioButton checkButton2 = new RunningRadioButton("Button2");
+    private RunningRadioButton checkButton3 = new RunningRadioButton("Button3");
     private final int HEIGHT = 25;
 
     public RadioButtonChooser() {
