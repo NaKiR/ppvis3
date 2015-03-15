@@ -26,20 +26,14 @@ public class MarqueeComponent extends Container {
     class MarqueeButtonEventListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            RunningButton.isRunning = true;
-            RunningLabel.isRunning = true;
-            RunningRadioButton.isRunning = true;
-            RunningCheckBox.isRunning = true;
+            RunningListener.isRunning = true;
         }
     }
 
     class StopButtonEventListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            RunningButton.isRunning = false;
-            RunningLabel.isRunning = false;
-            RunningRadioButton.isRunning = false;
-            RunningCheckBox.isRunning = false;
+            RunningListener.isRunning = false;
         }
     }
 }
