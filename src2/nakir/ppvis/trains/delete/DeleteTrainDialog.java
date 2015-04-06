@@ -1,5 +1,6 @@
-package nakir.ppvis.trains.search;
+package nakir.ppvis.trains.delete;
 
+import nakir.ppvis.trains.TrainTable;
 import nakir.ppvis.trains.model.TrainModel;
 import nakir.ppvis.trains.model.TrainTableModel;
 import org.freixas.jcalendar.JCalendarCombo;
@@ -9,10 +10,11 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Calendar;
 import java.util.List;
+import java.util.Locale;
 
-public class SearchTrainDialog extends JDialog {
+public class DeleteTrainDialog extends JDialog {
     private JPanel choosePanel = new JPanel();
     private JTextField trainNumber = new JTextField();
     private JTextField dispatchStation = new JTextField();
@@ -43,12 +45,11 @@ public class SearchTrainDialog extends JDialog {
                     true);
     private JButton ok = new JButton("Ok");
     private JButton cancel = new JButton("Cancel");
-    private TrainTableModel searchModel = new TrainTableModel();
 
 
-    public SearchTrainDialog(final JFrame owner, final TrainTableModel model) {
+    public DeleteTrainDialog(final JFrame owner, final TrainTableModel model) {
         super(owner, "New entry", true);
-        setSize(new Dimension(700, 400));
+        setSize(new Dimension(700, 200));
         setResizable(false);
         setLocationRelativeTo(owner);
         setLayout(new BorderLayout());
@@ -64,7 +65,10 @@ public class SearchTrainDialog extends JDialog {
             @Override
             public void actionPerformed(ActionEvent e) {
                 List<TrainModel> modelList = model.getTrainSchedule();
-                for (TrainModel train : modelList) {
+                int numberOfDeleted = 0;
+
+                for (int rowNumber = 0; rowNumber < modelList.size(); rowNumber++) {
+                    TrainModel train = modelList.get(rowNumber);
                     int numberOfActivated = 0;
                     int numberOfMatching = 0;
 
@@ -100,10 +104,15 @@ public class SearchTrainDialog extends JDialog {
                             numberOfMatching++;
                         }
                     }
+                    System.out.println(numberOfActivated + " " + numberOfMatching);
                     if (numberOfActivated == numberOfMatching) {
-                        searchModel.add(train);
+                        model.delete(train);
+                        numberOfDeleted++;
+                        rowNumber--;
                     }
                 }
+                JOptionPane.showMessageDialog(null, "Number of deleted trains: " + numberOfDeleted);
+                setVisible(false);
             }
         });
         cancel.addActionListener(new ActionListener() {
@@ -116,7 +125,6 @@ public class SearchTrainDialog extends JDialog {
         Container contentPane = getContentPane();
         createChoosePanel();
         contentPane.add(choosePanel, BorderLayout.NORTH);
-        contentPane.add(new JScrollPane(new JTable(searchModel)), BorderLayout.CENTER);
     }
 
     public void createChoosePanel() {

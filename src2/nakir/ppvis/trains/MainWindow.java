@@ -1,6 +1,7 @@
 package nakir.ppvis.trains;
 
 import nakir.ppvis.trains.add.AddTrainListener;
+import nakir.ppvis.trains.delete.DeleteTrainListener;
 import nakir.ppvis.trains.model.TrainTableModel;
 import nakir.ppvis.trains.search.SearchTrainListener;
 
@@ -33,6 +34,9 @@ public class MainWindow extends JFrame {
             JMenuItem searchItem = new JMenuItem("Search");
             searchItem.addActionListener(new SearchTrainListener(model));
             editMenu.add(searchItem);
+            JMenuItem deleteItem = new JMenuItem("Delete");
+            deleteItem.addActionListener(new DeleteTrainListener(model));
+            editMenu.add(deleteItem);
         menuBar.add(fileMenu);
         menuBar.add(editMenu);
         setJMenuBar(menuBar);

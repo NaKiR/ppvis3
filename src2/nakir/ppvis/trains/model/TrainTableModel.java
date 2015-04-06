@@ -79,6 +79,11 @@ public class TrainTableModel extends AbstractTableModel {
         fireTableDataChanged();
     }
 
+    public void delete(TrainModel deletedTrain) {
+        trainSchedule.remove(deletedTrain);
+        fireTableDataChanged();
+    }
+
     public List<TrainModel> getTrainSchedule() {
         return trainSchedule;
     }
