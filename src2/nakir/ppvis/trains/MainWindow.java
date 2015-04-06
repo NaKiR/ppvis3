@@ -10,12 +10,13 @@ import javax.swing.*;
 public class MainWindow extends JFrame {
 
     public MainWindow(TrainTableModel model) {
+        TrainTable table = new TrainTable(model);
         setTitle("Train Schedule");
         setSize(700, 500);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         createMenuBar(model);
-        add(new TrainTable(model));
+        add(table);
 
         setVisible(true);
     }
@@ -25,7 +26,11 @@ public class MainWindow extends JFrame {
 
         JMenu fileMenu = new JMenu("File");
             JMenuItem openItem = new JMenuItem("Open");
+            openItem.addActionListener(new OpenFileListener());
             fileMenu.add(openItem);
+            JMenuItem saveItem = new JMenuItem("Save");
+            saveItem.addActionListener(new SaveFileListener(model));
+            fileMenu.add(saveItem);
 
         JMenu editMenu = new JMenu("Edit");
             JMenuItem insertItem = new JMenuItem("Insert");
