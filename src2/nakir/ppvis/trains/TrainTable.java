@@ -7,9 +7,6 @@ import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import java.awt.*;
 
-/**
- * Created by NotePad on 31.03.2015.
- */
 public class TrainTable extends JPanel {
 
     public TrainTable(TrainTableModel model) {

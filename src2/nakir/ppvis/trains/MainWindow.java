@@ -1,13 +1,11 @@
 package nakir.ppvis.trains;
 
-import nakir.ppvis.trains.Add.AddTrainListener;
+import nakir.ppvis.trains.add.AddTrainListener;
 import nakir.ppvis.trains.model.TrainTableModel;
+import nakir.ppvis.trains.search.SearchTrainListener;
 
 import javax.swing.*;
 
-/**
- * Created by NotePad on 31.03.2015.
- */
 public class MainWindow extends JFrame {
 
     public MainWindow(TrainTableModel model) {
@@ -32,6 +30,9 @@ public class MainWindow extends JFrame {
             JMenuItem insertItem = new JMenuItem("Insert");
             insertItem.addActionListener(new AddTrainListener(model));
             editMenu.add(insertItem);
+            JMenuItem searchItem = new JMenuItem("Search");
+            searchItem.addActionListener(new SearchTrainListener(model));
+            editMenu.add(searchItem);
         menuBar.add(fileMenu);
         menuBar.add(editMenu);
         setJMenuBar(menuBar);

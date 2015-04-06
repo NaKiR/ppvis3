@@ -1,4 +1,4 @@
-package nakir.ppvis.trains.Add;
+package nakir.ppvis.trains.add;
 
 import nakir.ppvis.trains.model.TrainModel;
 import nakir.ppvis.trains.model.TrainTableModel;
@@ -12,14 +12,10 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-/**
- * Created by NotePad on 26.03.2015.
- */
 public class AddTrainDialog extends JDialog {
     private JTextField trainNumber = new JTextField();
     private JTextField dispatchStation = new JTextField();
     private JTextField arrivalStation = new JTextField();
-    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
     private JCalendarCombo departureDate =
             new JCalendarCombo(
                     Calendar.getInstance(),
@@ -32,8 +28,6 @@ public class AddTrainDialog extends JDialog {
                     Locale.getDefault(),
                     JCalendarCombo.DISPLAY_DATE | JCalendarCombo.DISPLAY_TIME,
                     true);
-    private JButton ok = new JButton("Ok");
-    private JButton cancel = new JButton("Cancel");
 
 
     public AddTrainDialog(final JFrame owner, final TrainTableModel model) {
@@ -57,17 +51,25 @@ public class AddTrainDialog extends JDialog {
         fieldConstraint.gridx = 1;
         fieldConstraint.gridy = GridBagConstraints.RELATIVE;
 
+
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
         departureDate.setDateFormat(dateFormat);
         arrivalDate.setDateFormat(dateFormat);
+
+        JButton ok = new JButton("Ok");
         ok.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 TrainModel newTrain = new TrainModel();
                 try {
-                    Integer tempNumber = new Integer(trainNumber.getText());
-                    newTrain.trainNumber = tempNumber;
+                    newTrain.trainNumber = new Integer(trainNumber.getText());
                 } catch (NumberFormatException ex) {
                     JOptionPane.showMessageDialog(null, "Incorrect train number!");
+                    return;
+                }
+                if (dispatchStation.getText().isEmpty() || arrivalStation.getText().isEmpty()) {
+                    JOptionPane.showMessageDialog(null, "Incorrect station!");
+                    return;
                 }
                 newTrain.dispatchStation = dispatchStation.getText();
                 newTrain.arrivalStation = arrivalStation.getText();
@@ -78,12 +80,12 @@ public class AddTrainDialog extends JDialog {
                             - newTrain.departureDate.getTime()) / 1000;
                     setVisible(false);
                     model.add(newTrain);
-                    model.fireTableDataChanged();
                 } else {
                     JOptionPane.showMessageDialog(null, "Incorrect arrival date!");
                 }
             }
         });
+        JButton cancel = new JButton("Cancel");
         cancel.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

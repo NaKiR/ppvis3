@@ -5,9 +5,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
-* Created by NotePad on 31.03.2015.
-*/
 public class TrainTableModel extends AbstractTableModel {
 
     private List<TrainModel> trainSchedule = new ArrayList<TrainModel>();
@@ -79,5 +76,10 @@ public class TrainTableModel extends AbstractTableModel {
 
     public void add(TrainModel newTrain) {
         trainSchedule.add(newTrain);
+        fireTableDataChanged();
+    }
+
+    public List<TrainModel> getTrainSchedule() {
+        return trainSchedule;
     }
 }
