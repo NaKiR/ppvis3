@@ -28,23 +28,32 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="850">
-              <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
+              <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SaveFileListener.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SaveFileListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/SaveFileListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.110074624" vertical-offset="620" max-vertical-offset="1275">
-              <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="748">
+              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="34" selection-end-column="84" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
-                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="false" />
+                <element signature="e#545#546#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OpenFileListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/OpenFileListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="229" max-vertical-offset="799">
+              <caret line="35" column="97" selection-start-line="35" selection-start-column="97" selection-end-line="35" selection-end-column="97" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,21 +61,12 @@
       <file leaf-file-name="SearchTrainListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/search/SearchTrainListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="425">
               <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="19" selection-end-column="5" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#333#334#0" expanded="false" />
+                <element signature="e#367#368#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddTrainDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/add/AddTrainDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="761" max-vertical-offset="1649">
-              <caret line="83" column="83" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="83" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -74,9 +74,11 @@
       <file leaf-file-name="TrainTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/TrainTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="510">
               <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,18 +89,11 @@
             <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="2584">
               <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2464#4637#0" expanded="false" />
+                <element signature="e#4636#4637#0" expanded="false" />
+                <element signature="e#4673#4833#0" expanded="false" />
+                <element signature="e#4832#4833#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteTrainListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/delete/DeleteTrainListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -108,7 +103,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2516">
               <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#2469#5078#0" expanded="false" />
+                <element signature="e#5077#5078#0" expanded="false" />
+                <element signature="e#5114#5274#0" expanded="false" />
+                <element signature="e#5273#5274#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,19 +117,76 @@
       <file leaf-file-name="TrainModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/model/TrainModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="306">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrainTableModel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Date.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.7.0_71/src.zip!/java/util/Date.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1420" max-vertical-offset="21437">
+              <caret line="128" column="13" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#55493#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#6336#6337#0" expanded="false" />
+                <element signature="e#6384#6385#0" expanded="false" />
+                <element signature="e#6790#6791#0" expanded="false" />
+                <element signature="e#6821#6822#0" expanded="false" />
+                <element signature="e#7523#7524#0" expanded="false" />
+                <element signature="e#7571#7572#0" expanded="false" />
+                <element signature="e#8472#8473#0" expanded="false" />
+                <element signature="e#8524#8525#0" expanded="false" />
+                <element signature="e#10666#10667#0" expanded="false" />
+                <element signature="e#10696#10697#0" expanded="false" />
+                <element signature="e#28566#28567#0" expanded="false" />
+                <element signature="e#28617#28618#0" expanded="false" />
+                <element signature="e#29388#29389#0" expanded="false" />
+                <element signature="e#29452#29453#0" expanded="false" />
+                <element signature="e#29988#29989#0" expanded="false" />
+                <element signature="e#30066#30067#0" expanded="false" />
+                <element signature="e#31917#31918#0" expanded="false" />
+                <element signature="e#31967#31968#0" expanded="false" />
+                <element signature="e#32765#32766#0" expanded="false" />
+                <element signature="e#32818#32819#0" expanded="false" />
+                <element signature="e#33530#33531#0" expanded="false" />
+                <element signature="e#33593#33594#0" expanded="false" />
+                <element signature="e#34182#34183#0" expanded="false" />
+                <element signature="e#34227#34228#0" expanded="false" />
+                <element signature="e#34823#34824#0" expanded="false" />
+                <element signature="e#34872#34873#0" expanded="false" />
+                <element signature="e#35356#35357#0" expanded="false" />
+                <element signature="e#35403#35404#0" expanded="false" />
+                <element signature="e#36016#36017#0" expanded="false" />
+                <element signature="e#36069#36070#0" expanded="false" />
+                <element signature="e#36655#36656#0" expanded="false" />
+                <element signature="e#36702#36703#0" expanded="false" />
+                <element signature="e#37303#37304#0" expanded="false" />
+                <element signature="e#37356#37357#0" expanded="false" />
+                <element signature="e#37656#37657#0" expanded="false" />
+                <element signature="e#37692#37693#0" expanded="false" />
+                <element signature="e#38648#38649#0" expanded="false" />
+                <element signature="e#38708#38709#0" expanded="false" />
+                <element signature="e#39170#39171#0" expanded="false" />
+                <element signature="e#39230#39231#0" expanded="false" />
+                <element signature="e#39926#39927#0" expanded="false" />
+                <element signature="e#40007#40008#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrainTableModel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/model/TrainTableModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1411">
-              <caret line="83" column="31" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
-              <folding />
+            <state vertical-scroll-proportion="0.40250698" vertical-offset="0" max-vertical-offset="1683">
+              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+              <folding>
+                <element signature="e#2834#2846#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,17 +236,17 @@
         <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/search/SearchTrainListener.java" />
         <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/add/AddTrainDialog.java" />
         <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/add/AddTrainListener.java" />
-        <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/model/TrainModel.java" />
         <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/LabTrainSchedule.java" />
         <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/delete/SearchTrainListener.java" />
         <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/delete/DeleteTrainListener.java" />
-        <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/model/TrainTableModel.java" />
         <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/delete/DeleteTrainDialog.java" />
-        <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/OpenFileListener.java" />
         <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/search/SearchTrainDialog.java" />
         <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/TrainTable.java" />
-        <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/MainWindow.java" />
         <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/SaveFileListener.java" />
+        <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/model/TrainModel.java" />
+        <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/OpenFileListener.java" />
+        <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src2/nakir/ppvis/trains/model/TrainTableModel.java" />
       </list>
     </option>
   </component>
@@ -221,7 +279,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -280,28 +337,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="search" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PpvisLab2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PpvisLab2_1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trains" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -328,30 +363,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PpvisLab2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PpvisLab2_1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trains" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="add" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -522,7 +536,7 @@
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/jcalendar.jar" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/xstream-1.4.8.jar" />
       <envs />
       <method />
     </configuration>
@@ -597,20 +611,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33154362" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24295302" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18508998" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -618,12 +630,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24295302" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -679,13 +693,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/nakir/ppvis/lab2/view/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="612">
-          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/nakir/ppvis/lab2/TrainSchedule.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="833">
@@ -950,7 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
           <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -959,8 +965,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
           <folding>
-            <element signature="e#485#642#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#485#642#0" expanded="false" />
+            <element signature="e#641#642#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -969,7 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="761" max-vertical-offset="1649">
           <caret line="83" column="83" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="83" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -985,7 +990,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="2516">
           <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2469#5078#0" expanded="false" />
+            <element signature="e#5077#5078#0" expanded="false" />
+            <element signature="e#5114#5274#0" expanded="false" />
+            <element signature="e#5273#5274#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -994,17 +1005,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="19" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/OpenFileListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#333#334#0" expanded="false" />
+            <element signature="e#367#368#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1014,16 +1016,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="2584">
           <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2464#4637#0" expanded="false" />
+            <element signature="e#4636#4637#0" expanded="false" />
+            <element signature="e#4673#4833#0" expanded="false" />
+            <element signature="e#4832#4833#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/model/TrainModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,34 +1028,106 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/MainWindow.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_71/src.zip!/java/util/Date.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="850">
-          <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1420" max-vertical-offset="21437">
+          <caret line="128" column="13" selection-start-line="128" selection-start-column="13" selection-end-line="128" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#55493#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#6336#6337#0" expanded="false" />
+            <element signature="e#6384#6385#0" expanded="false" />
+            <element signature="e#6790#6791#0" expanded="false" />
+            <element signature="e#6821#6822#0" expanded="false" />
+            <element signature="e#7523#7524#0" expanded="false" />
+            <element signature="e#7571#7572#0" expanded="false" />
+            <element signature="e#8472#8473#0" expanded="false" />
+            <element signature="e#8524#8525#0" expanded="false" />
+            <element signature="e#10666#10667#0" expanded="false" />
+            <element signature="e#10696#10697#0" expanded="false" />
+            <element signature="e#28566#28567#0" expanded="false" />
+            <element signature="e#28617#28618#0" expanded="false" />
+            <element signature="e#29388#29389#0" expanded="false" />
+            <element signature="e#29452#29453#0" expanded="false" />
+            <element signature="e#29988#29989#0" expanded="false" />
+            <element signature="e#30066#30067#0" expanded="false" />
+            <element signature="e#31917#31918#0" expanded="false" />
+            <element signature="e#31967#31968#0" expanded="false" />
+            <element signature="e#32765#32766#0" expanded="false" />
+            <element signature="e#32818#32819#0" expanded="false" />
+            <element signature="e#33530#33531#0" expanded="false" />
+            <element signature="e#33593#33594#0" expanded="false" />
+            <element signature="e#34182#34183#0" expanded="false" />
+            <element signature="e#34227#34228#0" expanded="false" />
+            <element signature="e#34823#34824#0" expanded="false" />
+            <element signature="e#34872#34873#0" expanded="false" />
+            <element signature="e#35356#35357#0" expanded="false" />
+            <element signature="e#35403#35404#0" expanded="false" />
+            <element signature="e#36016#36017#0" expanded="false" />
+            <element signature="e#36069#36070#0" expanded="false" />
+            <element signature="e#36655#36656#0" expanded="false" />
+            <element signature="e#36702#36703#0" expanded="false" />
+            <element signature="e#37303#37304#0" expanded="false" />
+            <element signature="e#37356#37357#0" expanded="false" />
+            <element signature="e#37656#37657#0" expanded="false" />
+            <element signature="e#37692#37693#0" expanded="false" />
+            <element signature="e#38648#38649#0" expanded="false" />
+            <element signature="e#38708#38709#0" expanded="false" />
+            <element signature="e#39170#39171#0" expanded="false" />
+            <element signature="e#39230#39231#0" expanded="false" />
+            <element signature="e#39926#39927#0" expanded="false" />
+            <element signature="e#40007#40008#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/model/TrainTableModel.java">
+    <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/model/TrainModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="433" max-vertical-offset="1411">
-          <caret line="83" column="31" selection-start-line="83" selection-start-column="31" selection-end-line="83" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/SaveFileListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.110074624" vertical-offset="620" max-vertical-offset="1275">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="748">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="34" selection-end-column="84" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="false" />
+            <element signature="e#545#546#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/OpenFileListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="229" max-vertical-offset="799">
+          <caret line="35" column="97" selection-start-line="35" selection-start-column="97" selection-end-line="35" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
+          <caret line="28" column="65" selection-start-line="28" selection-start-column="65" selection-end-line="28" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src2/nakir/ppvis/trains/model/TrainTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40250698" vertical-offset="0" max-vertical-offset="1683">
+          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <folding>
+            <element signature="e#2834#2846#0" expanded="true" />
           </folding>
         </state>
       </provider>

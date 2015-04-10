@@ -8,16 +8,18 @@ import java.util.List;
 public class TrainTableModel extends AbstractTableModel {
 
     private List<TrainModel> trainSchedule = new ArrayList<TrainModel>();
-    final String[] columnNames = new String[] {"Номер поезда", "Станция отправления", "Станция прибытия",
+    private  final String[] columnNames = new String[] {"Номер поезда", "Станция отправления", "Станция прибытия",
             "Дата отправления", "Дата прибытия", "Время в пути"};
-    private SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+    private  final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+    private int pageNumber = 0;
+    private int trainsByPage = 10;
 
     public TrainTableModel() {
     }
 
     @Override
     public int getRowCount() {
-        return trainSchedule.size();
+        return trainsByPage;
     }
 
     @Override
@@ -86,5 +88,19 @@ public class TrainTableModel extends AbstractTableModel {
 
     public List<TrainModel> getTrainSchedule() {
         return trainSchedule;
+    }
+
+    public List<TrainModel> getTrainSchedule(int numberOfTrains, int pageNumber) {
+        List<TrainModel> newSchedule = new ArrayList<TrainModel>();
+        for (int train = (pageNumber + 1) * numberOfTrains; train < (pageNumber + 2) * train; train++) {
+            newSchedule.add(trainSchedule.get(train));
+        }
+        return newSchedule;
+    }
+
+
+    public void replaceList(List<TrainModel> list) {
+        trainSchedule = list;
+        fireTableDataChanged();
     }
 }

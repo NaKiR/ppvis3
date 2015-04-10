@@ -26,7 +26,7 @@ public class MainWindow extends JFrame {
 
         JMenu fileMenu = new JMenu("File");
             JMenuItem openItem = new JMenuItem("Open");
-            openItem.addActionListener(new OpenFileListener());
+            openItem.addActionListener(new OpenFileListener(model));
             fileMenu.add(openItem);
             JMenuItem saveItem = new JMenuItem("Save");
             saveItem.addActionListener(new SaveFileListener(model));
