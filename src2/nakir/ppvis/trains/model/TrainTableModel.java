@@ -12,13 +12,16 @@ public class TrainTableModel extends AbstractTableModel {
             "Дата отправления", "Дата прибытия", "Время в пути"};
     private  final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
     private int pageNumber = 0;
-    private int trainsByPage = 10;
+    private int trainsByPage = 5;
 
     public TrainTableModel() {
     }
 
     @Override
     public int getRowCount() {
+        if (trainSchedule.size() < trainsByPage * (pageNumber + 1)){
+            return trainSchedule.size() - trainsByPage * pageNumber;
+        }
         return trainsByPage;
     }
 
@@ -60,18 +63,18 @@ public class TrainTableModel extends AbstractTableModel {
     public Object getValueAt(int rowIndex, int columnIndex) {
         switch (columnIndex) {
             case 0:
-                return trainSchedule.get(rowIndex).trainNumber;
+                return trainSchedule.get(rowIndex + trainsByPage * pageNumber).trainNumber;
             case 1:
-                return trainSchedule.get(rowIndex).dispatchStation;
+                return trainSchedule.get(rowIndex + trainsByPage * pageNumber).dispatchStation;
             case 2:
-                return trainSchedule.get(rowIndex).arrivalStation;
+                return trainSchedule.get(rowIndex + trainsByPage * pageNumber).arrivalStation;
             case 3:
-                return dateFormat.format(trainSchedule.get(rowIndex).departureDate);
+                return dateFormat.format(trainSchedule.get(rowIndex + trainsByPage * pageNumber).departureDate);
             case 4:
-                return dateFormat.format(trainSchedule.get(rowIndex).arrivalDate);
+                return dateFormat.format(trainSchedule.get(rowIndex + trainsByPage * pageNumber).arrivalDate);
             case 5:
-                return (trainSchedule.get(rowIndex).travelTime / 3600) + " ч. " +
-                        ((trainSchedule.get(rowIndex).travelTime % 3600) / 60) + " мин.";
+                return (trainSchedule.get(rowIndex + trainsByPage * pageNumber).travelTime / 3600) + " ч. " +
+                        ((trainSchedule.get(rowIndex + trainsByPage * pageNumber).travelTime % 3600) / 60) + " мин.";
         }
         return "";
     }
@@ -102,5 +105,27 @@ public class TrainTableModel extends AbstractTableModel {
     public void replaceList(List<TrainModel> list) {
         trainSchedule = list;
         fireTableDataChanged();
+    }
+
+    public void setTrainsByPage(int number) {
+        trainsByPage = number;
+        fireTableDataChanged();
+    }
+
+    public void setPageNumber(int page){
+        pageNumber = page;
+        fireTableDataChanged();
+    }
+
+    public int getTrainsByPage() {
+        return trainsByPage;
+    }
+
+    public int getPageNumber() {
+        return pageNumber;
+    }
+
+    public int getMaxPage() {
+        return trainSchedule.size() / trainsByPage;
     }
 }

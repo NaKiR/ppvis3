@@ -24,6 +24,6 @@ public class TrainTable extends JPanel {
         tablePane.setBorder(BorderFactory.createCompoundBorder());
         setLayout(new BorderLayout());
         add(tablePane, BorderLayout.CENTER);
-        add(new BottomPanel(), BorderLayout.SOUTH);
+        add(new BottomPanel(model), BorderLayout.SOUTH);
     }
 }
