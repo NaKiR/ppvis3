@@ -15,14 +15,14 @@ public class BottomPanel extends JPanel {
 
     public BottomPanel(final TrainTableModel model) {
         setLayout(new FlowLayout(FlowLayout.CENTER));
-        final JLabel pageNumber = new JLabel("Стр. " + (model.getPageNumber() + 1));
+        final JLabel pageNumber = new JLabel("Стр. " + (model.getPageNumber() + 1 + " из " + (model.getMaxPage() + 1)));
 
         add(firstPageButton);
         firstPageButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 model.setPageNumber(0);
-                pageNumber.setText("Стр. " + (model.getPageNumber() + 1));
+                pageNumber.setText("Стр. " + (model.getPageNumber() + 1 + " из " + (model.getMaxPage() + 1)));
             }
         });
         add(prevPageButton);
@@ -31,7 +31,7 @@ public class BottomPanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 if(model.getPageNumber() > 0) {
                     model.setPageNumber(model.getPageNumber() - 1);
-                    pageNumber.setText("Стр. " + (model.getPageNumber() + 1));
+                    pageNumber.setText("Стр. " + (model.getPageNumber() + 1 + " из " + (model.getMaxPage() + 1)));
                 }
             }
         });
@@ -44,7 +44,7 @@ public class BottomPanel extends JPanel {
                     return;
                 }
                 model.setPageNumber(model.getPageNumber() + 1);
-                pageNumber.setText("Стр. " + (model.getPageNumber() + 1));
+                pageNumber.setText("Стр. " + (model.getPageNumber() + 1 + " из " + (model.getMaxPage() + 1)));
             }
         });
         add(lastPageButton);
@@ -52,7 +52,7 @@ public class BottomPanel extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 model.setPageNumber(model.getMaxPage());
-                pageNumber.setText("Стр. " + (model.getPageNumber() + 1));
+                pageNumber.setText("Стр. " + (model.getPageNumber() + 1 + " из " + (model.getMaxPage() + 1)));
             }
         });
     }

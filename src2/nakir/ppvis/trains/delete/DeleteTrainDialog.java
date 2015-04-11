@@ -1,65 +1,20 @@
 package nakir.ppvis.trains.delete;
 
-import nakir.ppvis.trains.TrainTable;
+import nakir.ppvis.trains.TrainDialog;
 import nakir.ppvis.trains.model.TrainModel;
 import nakir.ppvis.trains.model.TrainTableModel;
-import org.freixas.jcalendar.JCalendarCombo;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.List;
-import java.util.Locale;
 
-public class DeleteTrainDialog extends JDialog {
-    private JPanel choosePanel = new JPanel();
-    private JTextField trainNumber = new JTextField();
-    private JTextField dispatchStation = new JTextField();
-    private JTextField arrivalStation = new JTextField();
-    private JCalendarCombo departureDateEnd =
-            new JCalendarCombo(
-                    Calendar.getInstance(),
-                    Locale.getDefault(),
-                    JCalendarCombo.DISPLAY_DATE | JCalendarCombo.DISPLAY_TIME,
-                    true);
-    private JCalendarCombo arrivalDateEnd =
-            new JCalendarCombo(
-                    Calendar.getInstance(),
-                    Locale.getDefault(),
-                    JCalendarCombo.DISPLAY_DATE | JCalendarCombo.DISPLAY_TIME,
-                    true);
-    private JCalendarCombo departureDateStart =
-            new JCalendarCombo(
-                    Calendar.getInstance(),
-                    Locale.getDefault(),
-                    JCalendarCombo.DISPLAY_DATE | JCalendarCombo.DISPLAY_TIME,
-                    true);
-    private JCalendarCombo arrivalDateStart =
-            new JCalendarCombo(
-                    Calendar.getInstance(),
-                    Locale.getDefault(),
-                    JCalendarCombo.DISPLAY_DATE | JCalendarCombo.DISPLAY_TIME,
-                    true);
-    private JButton ok = new JButton("Ok");
-    private JButton cancel = new JButton("Cancel");
-
+public class DeleteTrainDialog extends TrainDialog {
 
     public DeleteTrainDialog(final JFrame owner, final TrainTableModel model) {
-        super(owner, "New entry", true);
+        super(owner, model);
         setSize(new Dimension(700, 200));
-        setResizable(false);
-        setLocationRelativeTo(owner);
-        setLayout(new BorderLayout());
-
-
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-        departureDateStart.setDateFormat(dateFormat);
-        departureDateEnd.setDateFormat(dateFormat);
-        arrivalDateStart.setDateFormat(dateFormat);
-        arrivalDateEnd.setDateFormat(dateFormat);
 
         ok.addActionListener(new ActionListener() {
             @Override
@@ -115,49 +70,5 @@ public class DeleteTrainDialog extends JDialog {
                 setVisible(false);
             }
         });
-        cancel.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                setVisible(false);
-            }
-        });
-
-        Container contentPane = getContentPane();
-        createChoosePanel();
-        contentPane.add(choosePanel, BorderLayout.NORTH);
-    }
-
-    public void createChoosePanel() {
-        choosePanel.setLayout(new GridBagLayout());
-        GridBagConstraints labelConstraint = new GridBagConstraints();
-        labelConstraint.anchor = GridBagConstraints.NORTH;
-        labelConstraint.fill = GridBagConstraints.HORIZONTAL;
-        labelConstraint.weightx = 1;
-        labelConstraint.gridx = 0;
-        labelConstraint.gridy = GridBagConstraints.RELATIVE;
-
-        GridBagConstraints fieldConstraint = new GridBagConstraints();
-        fieldConstraint.anchor = GridBagConstraints.NORTH;
-        fieldConstraint.fill = GridBagConstraints.HORIZONTAL;
-        fieldConstraint.weightx = 1;
-        fieldConstraint.gridx = 1;
-        fieldConstraint.gridy = GridBagConstraints.RELATIVE;
-
-        choosePanel.add(new JLabel("Номер поезда"), labelConstraint);
-        choosePanel.add(trainNumber, fieldConstraint);
-        choosePanel.add(new JLabel("Станция отправления"), labelConstraint);
-        choosePanel.add(dispatchStation, fieldConstraint);
-        choosePanel.add(new JLabel("Станция прибытия"), labelConstraint);
-        choosePanel.add(arrivalStation, fieldConstraint);
-        choosePanel.add(new JLabel("Дата отправления: от "), labelConstraint);
-        choosePanel.add(departureDateStart, fieldConstraint);
-        choosePanel.add(new JLabel("до "), labelConstraint);
-        choosePanel.add(departureDateEnd, fieldConstraint);
-        choosePanel.add(new JLabel("Дата прибытия: от "), labelConstraint);
-        choosePanel.add(arrivalDateStart, fieldConstraint);
-        choosePanel.add(new JLabel("до "), labelConstraint);
-        choosePanel.add(arrivalDateEnd, fieldConstraint);
-        choosePanel.add(ok, labelConstraint);
-        choosePanel.add(cancel, fieldConstraint);
     }
 }

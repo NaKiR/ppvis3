@@ -11,12 +11,8 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.util.List;
 
-/**
- * Created by NotePad on 06.04.2015.
- */
 public class OpenFileListener implements ActionListener {
     private TrainTableModel model;
 
