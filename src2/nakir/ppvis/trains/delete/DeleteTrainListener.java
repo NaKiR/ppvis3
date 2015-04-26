@@ -1,5 +1,6 @@
 package nakir.ppvis.trains.delete;
 
+import nakir.ppvis.trains.Paginator;
 import nakir.ppvis.trains.model.TrainTableModel;
 
 import javax.swing.*;
@@ -7,9 +8,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class DeleteTrainListener implements ActionListener {
-    private TrainTableModel model;
+    private Paginator model;
 
-    public DeleteTrainListener(TrainTableModel model) {
+    public DeleteTrainListener(Paginator model) {
         this.model = model;
     }
 

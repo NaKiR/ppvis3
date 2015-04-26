@@ -1,5 +1,6 @@
 package nakir.ppvis.trains.add;
 
+import nakir.ppvis.trains.Paginator;
 import nakir.ppvis.trains.model.TrainModel;
 import nakir.ppvis.trains.model.TrainTableModel;
 import org.freixas.jcalendar.JCalendarCombo;
@@ -30,7 +31,7 @@ public class AddTrainDialog extends JDialog {
                     true);
 
 
-    public AddTrainDialog(final JFrame owner, final TrainTableModel model) {
+    public AddTrainDialog(final JFrame owner, final Paginator model) {
         super(owner, "New entry", true);
         setSize(new Dimension(300, 160));
         setResizable(false);

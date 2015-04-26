@@ -7,7 +7,8 @@ import java.awt.*;
 
 public class LabTrainSchedule {
     private TrainTableModel trainList = new TrainTableModel();
-    private MainWindow mainWindow = new MainWindow(trainList);
+    private Paginator paginator = new Paginator(trainList);
+    private MainWindow mainWindow = new MainWindow(paginator);
 
     public LabTrainSchedule() {}
 
@@ -22,9 +23,9 @@ public class LabTrainSchedule {
         });
     }
 }
-//Компонент постраничного вывода
-//Постраничный вывод в поиске
-//копипаст
-//постраничный вывод не в модели
+//Компонент постраничного вывода+
+//Постраничный вывод в поиске+
+//копипаст+
+//постраничный вывод не в модели+
 //Цепочка обязанностей или стратегия
-//Парсеры DOM, JAXB?
+//Парсеры DOM, JAXB+

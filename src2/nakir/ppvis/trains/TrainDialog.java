@@ -45,7 +45,7 @@ public class TrainDialog  extends JDialog {
     protected JButton ok = new JButton("Ok");
     protected JButton cancel = new JButton("Cancel");
 
-    public TrainDialog(final JFrame owner, final TrainTableModel model) {
+    public TrainDialog(final JFrame owner, final Paginator model) {
         super(owner, "New entry", true);
         setResizable(false);
         setLocationRelativeTo(owner);

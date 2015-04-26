@@ -15,7 +15,7 @@ import java.awt.event.ActionListener;
 
 public class MainWindow extends JFrame {
 
-    public MainWindow(TrainTableModel model) {
+    public MainWindow(Paginator model) {
         Toolkit kit = Toolkit.getDefaultToolkit();
         Image icon = kit.getImage("icon2.gif");
         setIconImage(icon);
@@ -28,12 +28,6 @@ public class MainWindow extends JFrame {
         add(table);
 
         JToolBar toolBar = new JToolBar();
-//        ImageIcon newFileIcon = new ImageIcon("icon2.gif");
-//        ImageIcon openFileIcon = new ImageIcon("icon2.gif");
-//        ImageIcon saveFileIcon = new ImageIcon("icon2.gif");
-//        ImageIcon insertRowIcon = new ImageIcon("icon2.gif");
-//        ImageIcon searchRowIcon = new ImageIcon("icon2.gif");
-//        ImageIcon deleteRowIcon = new ImageIcon("icon2.gif");
         JButton newFile = new JButton("New");
         newFile.addActionListener(new NewFileListener(model));
         JButton openFile = new JButton("Open");
@@ -56,7 +50,7 @@ public class MainWindow extends JFrame {
         setVisible(true);
     }
 
-    private void createMenuBar(final TrainTableModel model) {
+    private void createMenuBar(final Paginator model) {
         JMenuBar menuBar = new JMenuBar();
 
         JMenu fileMenu = new JMenu("File");
@@ -81,36 +75,8 @@ public class MainWindow extends JFrame {
             deleteItem.addActionListener(new DeleteTrainListener(model));
             editMenu.add(deleteItem);
 
-        JMenu optionsMenu = new JMenu("Options");
-            JMenu pageSizeMenu = new JMenu("Page size");
-            JMenuItem five = new JMenuItem("5 rows");
-            five.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    model.setTrainsByPage(5);
-                }
-            });
-            JMenuItem ten = new JMenuItem("10 rows");
-            ten.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    model.setTrainsByPage(10);
-                }
-            });
-            JMenuItem fifteen = new JMenuItem("15 rows");
-            fifteen.addActionListener(new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    model.setTrainsByPage(15);
-                }
-            });
-            pageSizeMenu.add(five);
-            pageSizeMenu.add(ten);
-            pageSizeMenu.add(fifteen);
-            optionsMenu.add(pageSizeMenu);
         menuBar.add(fileMenu);
         menuBar.add(editMenu);
-        menuBar.add(optionsMenu);
         setJMenuBar(menuBar);
     }
 }

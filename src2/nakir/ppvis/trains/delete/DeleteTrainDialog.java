@@ -1,5 +1,6 @@
 package nakir.ppvis.trains.delete;
 
+import nakir.ppvis.trains.Paginator;
 import nakir.ppvis.trains.TrainDialog;
 import nakir.ppvis.trains.model.TrainModel;
 import nakir.ppvis.trains.model.TrainTableModel;
@@ -12,7 +13,7 @@ import java.util.List;
 
 public class DeleteTrainDialog extends TrainDialog {
 
-    public DeleteTrainDialog(final JFrame owner, final TrainTableModel model) {
+    public DeleteTrainDialog(final JFrame owner, final Paginator model) {
         super(owner, model);
         setSize(new Dimension(700, 200));
 
