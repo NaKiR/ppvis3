@@ -2,7 +2,6 @@ package nakir.ppvis.trains.filelisteners;
 
 import nakir.ppvis.trains.Paginator;
 import nakir.ppvis.trains.model.TrainModel;
-import nakir.ppvis.trains.model.TrainTableModel;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

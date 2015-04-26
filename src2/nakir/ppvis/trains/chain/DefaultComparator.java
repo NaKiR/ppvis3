@@ -8,14 +8,14 @@ public class DefaultComparator implements Comparator {
     protected TrainModel train;
     protected SearchTrainModel searchedTrain;
 
-    DefaultComparator(TrainModel train, SearchTrainModel searchedTrain) {
+    public DefaultComparator(TrainModel train, SearchTrainModel searchedTrain) {
         this.train = train;
         this.searchedTrain = searchedTrain;
     }
 
-    public Boolean handle(TrainModel train, SearchTrainModel searchedTrain) {
+    public Boolean handle() {
         if (comparator != null) {
-            return comparator.handle(train, searchedTrain);
+            return comparator.handle();
         } else {
             return true;
         }

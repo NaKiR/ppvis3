@@ -3,7 +3,6 @@ package nakir.ppvis.trains.delete;
 import nakir.ppvis.trains.Paginator;
 import nakir.ppvis.trains.TrainDialog;
 import nakir.ppvis.trains.model.TrainModel;
-import nakir.ppvis.trains.model.TrainTableModel;
 
 import javax.swing.*;
 import java.awt.*;

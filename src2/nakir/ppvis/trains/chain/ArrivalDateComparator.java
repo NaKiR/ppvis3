@@ -6,17 +6,16 @@ import nakir.ppvis.trains.model.TrainModel;
 /**
  * Created by NotePad on 12.04.2015.
  */
-public class StationsComparator extends DefaultComparator implements Comparator {
+public class ArrivalDateComparator extends DefaultComparator implements Comparator {
 
-    public StationsComparator(TrainModel train, SearchTrainModel searchedTrain) {
+    public ArrivalDateComparator(TrainModel train, SearchTrainModel searchedTrain) {
         super(train, searchedTrain);
     }
 
     public Boolean handle() {
-        if ((searchedTrain.arrivalStation == train.arrivalStation ||
-                    searchedTrain.arrivalStation.isEmpty()) &&
-                (searchedTrain.dispatchStation == train.dispatchStation ||
-                    searchedTrain.dispatchStation.isEmpty())) {
+        if ((searchedTrain.arrivalDate.before(train.arrivalDate) &&
+                train.arrivalDate.before(searchedTrain.arrivalDateEnd)) ||
+                searchedTrain.arrivalDateEnd.before(searchedTrain.arrivalDate)) {
             if (comparator != null) {
                 return comparator.handle();
             } else {

@@ -1,11 +1,8 @@
 package nakir.ppvis.trains.filelisteners;
 
 
-import com.thoughtworks.xstream.XStream;
-import com.thoughtworks.xstream.io.xml.StaxDriver;
 import nakir.ppvis.trains.Paginator;
 import nakir.ppvis.trains.model.TrainModel;
-import nakir.ppvis.trains.model.TrainTableModel;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -19,9 +16,7 @@ import javax.xml.transform.stream.StreamResult;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.List;
 
 public class SaveFileListener implements ActionListener {

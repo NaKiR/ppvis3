@@ -5,13 +5,10 @@ import nakir.ppvis.trains.delete.DeleteTrainListener;
 import nakir.ppvis.trains.filelisteners.NewFileListener;
 import nakir.ppvis.trains.filelisteners.OpenFileListener;
 import nakir.ppvis.trains.filelisteners.SaveFileListener;
-import nakir.ppvis.trains.model.TrainTableModel;
 import nakir.ppvis.trains.search.SearchTrainListener;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class MainWindow extends JFrame {
 

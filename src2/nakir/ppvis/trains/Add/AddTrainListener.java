@@ -1,7 +1,6 @@
 package nakir.ppvis.trains.add;
 
 import nakir.ppvis.trains.Paginator;
-import nakir.ppvis.trains.model.TrainTableModel;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

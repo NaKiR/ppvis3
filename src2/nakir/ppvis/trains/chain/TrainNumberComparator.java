@@ -12,10 +12,10 @@ public class TrainNumberComparator extends DefaultComparator implements Comparat
         super(train, searchedTrain);
     }
 
-    public Boolean handle(TrainModel train, SearchTrainModel searchedTrain) {
-        if (searchedTrain.trainNumber == train.trainNumber) {
+    public Boolean handle() {
+        if (searchedTrain.trainNumber == train.trainNumber || searchedTrain.trainNumber == 0) {
             if (comparator != null) {
-                return comparator.handle(train, searchedTrain);
+                return comparator.handle();
             } else {
                 return true;
             }

@@ -1,10 +1,6 @@
 package nakir.ppvis.trains;
 
-import nakir.ppvis.trains.model.TrainTableModel;
-
 import javax.swing.*;
-import javax.swing.event.TableModelEvent;
-import javax.swing.event.TableModelListener;
 import java.awt.*;
 
 public class TrainTable extends JPanel {

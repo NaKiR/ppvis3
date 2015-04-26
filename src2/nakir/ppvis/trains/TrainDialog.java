@@ -1,6 +1,5 @@
 package nakir.ppvis.trains;
 
-import nakir.ppvis.trains.model.TrainTableModel;
 import org.freixas.jcalendar.JCalendarCombo;
 
 import javax.swing.*;
@@ -8,7 +7,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Calendar;
+import java.util.Locale;
 
 /**
  * Created by NotePad on 11.04.2015.
