@@ -14,20 +14,13 @@ public class Paginator extends AbstractTableModel {
     private String[] columnNames;
     private  final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
     private int pageNumber = 0;
-    private int trainsByPage = 2;
+    private int trainsByPage = 3;
     private TrainTableModel model;
 
     public Paginator(TrainTableModel model) {
         this.model = model;
         columnNames = model.getColumnNames();
         trainSchedule = model.getTrainSchedule(trainsByPage, pageNumber);
-//        Timer timer = new Timer(100, new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                fireTableDataChanged();
-//            }
-//        });
-//        timer.start();
     }
 
     @Override

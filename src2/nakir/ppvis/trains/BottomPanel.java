@@ -8,10 +8,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class BottomPanel extends JPanel {
-    private JButton firstPageButton = new JButton("<<");
-    private JButton prevPageButton = new JButton("<");
-    private JButton nextPageButton = new JButton(">");
-    private JButton lastPageButton = new JButton(">>");
 
     public BottomPanel(final Paginator model) {
         setLayout(new FlowLayout(FlowLayout.CENTER));
@@ -34,6 +30,7 @@ public class BottomPanel extends JPanel {
         });
 
         add(box);
+        final JButton firstPageButton = new JButton("<<");
         add(firstPageButton);
         firstPageButton.addActionListener(new ActionListener() {
             @Override
@@ -41,16 +38,18 @@ public class BottomPanel extends JPanel {
                 model.setPageNumber(0);
             }
         });
+        final JButton prevPageButton = new JButton("<");
         add(prevPageButton);
         prevPageButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(model.getPageNumber() > 0) {
+                if (model.getPageNumber() > 0) {
                     model.setPageNumber(model.getPageNumber() - 1);
                 }
             }
         });
         add(pageNumber);
+        final JButton nextPageButton = new JButton(">");
         add(nextPageButton);
         nextPageButton.addActionListener(new ActionListener() {
             @Override
@@ -61,6 +60,7 @@ public class BottomPanel extends JPanel {
                 model.setPageNumber(model.getPageNumber() + 1);
             }
         });
+        final JButton lastPageButton = new JButton(">>");
         add(lastPageButton);
         lastPageButton.addActionListener(new ActionListener() {
             @Override
@@ -70,12 +70,37 @@ public class BottomPanel extends JPanel {
         });
         add(new JLabel("Записей на страницу: "));
         add(editComboBox);
+        firstPageButton.setEnabled(false);
+        prevPageButton.setEnabled(false);
+        nextPageButton.setEnabled(false);
+        lastPageButton.setEnabled(false);
         model.addTableModelListener(new TableModelListener() {
 
             public void tableChanged(TableModelEvent e) {
                 pageNumber.setText("Стр. " + (model.getPageNumber() + 1 + " из " + (model.getMaxPage() + 1)));
                 informFirst.setText("Количество записей: " + model.getTrainSchedule().size());
                 informSecond.setText("На текущей странице: " + model.getPageSchedule().size());
+                if (model.getMaxPage() == 0) {
+                    firstPageButton.setEnabled(false);
+                    prevPageButton.setEnabled(false);
+                    nextPageButton.setEnabled(false);
+                    lastPageButton.setEnabled(false);
+                } else if (model.getPageNumber() == 0) {
+                    firstPageButton.setEnabled(false);
+                    prevPageButton.setEnabled(false);
+                    nextPageButton.setEnabled(true);
+                    lastPageButton.setEnabled(true);
+                } else if (model.getPageNumber() == model.getMaxPage()) {
+                    firstPageButton.setEnabled(true);
+                    prevPageButton.setEnabled(true);
+                    nextPageButton.setEnabled(false);
+                    lastPageButton.setEnabled(false);
+                } else {
+                    firstPageButton.setEnabled(true);
+                    prevPageButton.setEnabled(true);
+                    nextPageButton.setEnabled(true);
+                    lastPageButton.setEnabled(true);
+                }
             }
         });
     }

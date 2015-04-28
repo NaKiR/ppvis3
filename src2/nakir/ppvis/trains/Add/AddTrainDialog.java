@@ -31,7 +31,7 @@ public class AddTrainDialog extends JDialog {
 
 
     public AddTrainDialog(final JFrame owner, final Paginator model) {
-        super(owner, "New entry", true);
+        super(owner, "Add", true);
         setSize(new Dimension(300, 160));
         setResizable(false);
         setLocationRelativeTo(owner);

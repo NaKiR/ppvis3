@@ -23,4 +23,3 @@ public class LabTrainSchedule {
         });
     }
 }
-//Цепочка обязанностей или стратегия

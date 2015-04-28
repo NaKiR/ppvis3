@@ -3,9 +3,6 @@ package nakir.ppvis.trains.chain;
 import nakir.ppvis.trains.model.SearchTrainModel;
 import nakir.ppvis.trains.model.TrainModel;
 
-/**
- * Created by NotePad on 12.04.2015.
- */
 public class DepartureDateComparator extends DefaultComparator implements Comparator {
 
     public DepartureDateComparator(TrainModel train, SearchTrainModel searchedTrain) {

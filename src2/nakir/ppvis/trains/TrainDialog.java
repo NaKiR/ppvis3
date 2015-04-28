@@ -10,9 +10,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-/**
- * Created by NotePad on 11.04.2015.
- */
 public class TrainDialog  extends JDialog {
     protected JPanel choosePanel = new JPanel();
     protected JTextField trainNumber = new JTextField();
@@ -45,8 +42,8 @@ public class TrainDialog  extends JDialog {
     protected JButton ok = new JButton("Ok");
     protected JButton cancel = new JButton("Cancel");
 
-    public TrainDialog(final JFrame owner, final Paginator model) {
-        super(owner, "New entry", true);
+    public TrainDialog(final JFrame owner, String name) {
+        super(owner, name, true);
         setResizable(false);
         setLocationRelativeTo(owner);
         setLayout(new BorderLayout());

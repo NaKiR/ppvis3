@@ -20,7 +20,7 @@ public class SearchTrainDialog extends TrainDialog {
 
 
     public SearchTrainDialog(final JFrame owner, final Paginator model) {
-        super(owner, model);
+        super(owner, "Search");
         setSize(new Dimension(700, 400));
 
         ok.addActionListener(new ActionListener() {

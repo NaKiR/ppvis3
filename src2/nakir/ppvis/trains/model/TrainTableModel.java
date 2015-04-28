@@ -7,6 +7,7 @@ import java.util.List;
 
 public class TrainTableModel extends AbstractTableModel {
 
+    private static final int COL_TRAIN_NUMBER = 0;
     private final String[] columnNames = new String[]{"Номер поезда", "Станция отправления", "Станция прибытия",
             "Дата отправления", "Дата прибытия", "Время в пути"};
     private final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
@@ -57,7 +58,7 @@ public class TrainTableModel extends AbstractTableModel {
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
         switch (columnIndex) {
-            case 0:
+            case COL_TRAIN_NUMBER:
                 return trainSchedule.get(rowIndex).trainNumber;
             case 1:
                 return trainSchedule.get(rowIndex).dispatchStation;
